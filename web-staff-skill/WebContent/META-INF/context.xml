@@ -1,0 +1,13 @@
+<Context> 
+	<Resource name="jdbc/mysql"
+		auth="Container"
+		type="javax.sql.DataSource"
+		driverClassName="com.mysql.jdbc.Driver"
+		maxActive="100"
+		maxIdel="30" 
+		maxWait="5000"
+		username="dev22id"
+		password="dev22pw"
+		factory="org.apache.tomcat.jdbc.pool.DataSourceFactory"
+		url="jdbc:mysql://192.168.123.145:3306/test?useUnicode=true&amp;characterEncoding=euckr"/>
+</Context>
