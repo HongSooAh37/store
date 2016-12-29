@@ -15,6 +15,7 @@ import spms.controls.MemberListController;
 import spms.controls.MemberUpdateController;
 import spms.dao.MySqlMemberDao;
 
+// 수정 전 : MemberDao의 객체를 준비
 // MySqlMemberDao 적용
 @WebListener
 public class ContextLoaderListener implements ServletContextListener {
@@ -27,6 +28,8 @@ public class ContextLoaderListener implements ServletContextListener {
       DataSource ds = (DataSource)initialContext.lookup(
           "java:comp/env/jdbc/studydb");
       
+// 수정 전 : MemberDao memberDao = new MemberDao(); 
+//			 MemberDao의 인터페이스를 사용하기 때문에...
       MySqlMemberDao memberDao = new MySqlMemberDao();
       memberDao.setDataSource(ds);
       

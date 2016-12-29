@@ -11,7 +11,7 @@ import java.util.List;
 import javax.sql.DataSource;
 
 import spms.vo.Member;
-
+//	1229 : 
 public class MySqlMemberDao implements MemberDao {
   DataSource ds;
 
